@@ -4,7 +4,9 @@ import json
 import time
 import mysql.connector as server
 
-urls = {'capitales': 'https://www.bmv.com.mx/es/Grupo_BMV/Informacion_de_emisora/_rid/541/_mto/3/_mod/doSearch?idTipoMercado=CGEN_CAPIT&idTipoInstrumento=CGEN_ELAC&idEmision=&idTipoEmpresa=&idSector=&idSubsector=&idRamo=&idSubramo','tracs':'https://www.bmv.com.mx/es/Grupo_BMV/Informacion_de_emisora/_rid/541/_mto/3/_mod/doSearch?idTipoMercado=CGEN_CAPIT&idTipoInstrumento=CGEN_ELTRA&idTipoEmpresa=&idSector=&idSubsector=&idRamo=&idSubramo','fibras':'https://www.bmv.com.mx/es/Grupo_BMV/Informacion_de_emisora/_rid/541/_mto/3/_mod/doSearch?idTipoMercado=CGEN_CAPIT&idTipoInstrumento=CGEN_ELFI&idTipoEmpresa=&idSector=&idSubsector=&idRamo=&idSubramo'}
+urls = {'capitales': 'https://www.bmv.com.mx/es/Grupo_BMV/Informacion_de_emisora/_rid/541/_mto/3/_mod/doSearch?idTipoMercado=CGEN_CAPIT&idTipoInstrumento=CGEN_ELAC&idEmision=&idTipoEmpresa=&idSector=&idSubsector=&idRamo=&idSubramo',
+        'tracs':'https://www.bmv.com.mx/es/Grupo_BMV/Informacion_de_emisora/_rid/541/_mto/3/_mod/doSearch?idTipoMercado=CGEN_CAPIT&idTipoInstrumento=CGEN_ELTRA&idTipoEmpresa=&idSector=&idSubsector=&idRamo=&idSubramo',
+        'fibras':'https://www.bmv.com.mx/es/Grupo_BMV/Informacion_de_emisora/_rid/541/_mto/3/_mod/doSearch?idTipoMercado=CGEN_CAPIT&idTipoInstrumento=CGEN_ELFI&idTipoEmpresa=&idSector=&idSubsector=&idRamo=&idSubramo'}
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'}
 
 def Conversion():
